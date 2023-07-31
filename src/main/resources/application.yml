@@ -1,0 +1,20 @@
+server:
+  port: 9290
+  servlet:
+    contextPath: /ems
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ems
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: none
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    generate-ddl: false
+    show-sql: false
+  application:
+    name: ems-ops
+  
